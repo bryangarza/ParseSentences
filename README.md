@@ -44,5 +44,5 @@ Fetcher.pullAndExtract("http://www.weeklystandard.com/blogs/intel-chief-blasts-o
 ##Running
 From the command line:
 ```
-javac -cp ":./:./src/main/resources/*" ParseSentences.java && java -cp":./:./src/main/resources/*" ParseSentences
+javac -cp ":./:./src/main/resources/*" ParseSentences.java && java -cp ":./:./src/main/resources/*" ParseSentences
 ```
