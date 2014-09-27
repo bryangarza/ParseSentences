@@ -24,6 +24,7 @@ public class ParseSentences {
      * @param filename  the name of the file
      */
     public void doParse(String url, String filename) {
+        System.out.println("Parsing " + url + ", writing to " + filename);
         List<String> paragraphs = new ArrayList<String>();
         paragraphs = Fetcher.pullAndExtract(url);
 
@@ -97,6 +98,7 @@ public class ParseSentences {
 
     public static void main(String[] argv) {
         ParseSentences parser = new ParseSentences();
+        // Sample articles we can parse
         parser.doParse("http://www.weeklystandard.com/blogs/intel-chief-blasts-obama_802242.html", "intel.txt");
         parser.doParse("http://www.thedailybeast.com/articles/2014/08/21/swat-lobby-takes-a-shot-at-congress.html", "swat.txt");
         parser.doParse("http://www.thedailybeast.com/articles/2014/08/12/russia-s-suspicious-humanitarian-aid-for-ukraine-separatists.html", "russia.txt");
