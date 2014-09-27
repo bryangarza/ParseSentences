@@ -3,6 +3,10 @@
 Take text the raw text of an article and output it to a text file, with a clear
 delineation between each sentence.
 
+SentenceParser writes each article to a separate file, although it could easily
+be modified to write all articles to the same file. The filename is specified
+in the method call to `doParse()`. Encoding is UTF-8 by default.
+
 ##Example
 
 Input:
