@@ -62,13 +62,13 @@ public class ParseSentences {
     public void writeToFile(List<String> paragraphs, SentenceDetectorME sentenceDetector, String filename) {
         // Use BufferedWriter instead of Writer for newLine()
         BufferedWriter writer = null;
+        String sentences[] = null;
+        String line = null;
+        // Index that keeps count throughout all of the paragraphs, not just one
+        int lineIndex = 0;
 
         try {
             writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filename), ENCODING));
-            String sentences[] = null;
-            String line = null;
-            // Index that keeps count throughout all of the paragraphs, not just one
-            int lineIndex = 0;
 
             for (String p : paragraphs) {
                 sentences = sentenceDetector.sentDetect(p);
