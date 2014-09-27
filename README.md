@@ -40,3 +40,9 @@ Agency from July 2012 until last week."
  */
 Fetcher.pullAndExtract("http://www.weeklystandard.com/blogs/intel-chief-blasts-obama_802242.html");
 ```
+
+##Running
+From the command line:
+```
+javac -cp ":./:./src/main/resources/*" ParseSentences.java && java -cp":./:./src/main/resources/*" ParseSentences
+```
